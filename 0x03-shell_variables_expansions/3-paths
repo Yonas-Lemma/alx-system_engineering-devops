@@ -1,3 +1,4 @@
 #!/bin/bash
-echo "$(echo "$PATH" | tr ':' '\n' | grep -v '^$' | wc -l)"
-
+<<<<<<< HEAD=====
+echo $PATH | tr ':' '\n' | wc -l
+>>>>>>> c150b172651796818b120db1623d7f54cbb4e99d
