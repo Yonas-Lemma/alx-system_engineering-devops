@@ -52,3 +52,30 @@ You should see /action as the last directory in the list.
 Important
 The change affects only the current session unless you add the command to your shell configuration files (like ~/.bashrc).
 Make sure /action directory exists if you plan to add commands there.
+
+###Script: 3-paths
+Description
+This script counts how many directories are listed in the current environment variable $PATH. It outputs the total number of directories.
+
+How it works
+It takes the $PATH string.
+Replaces each colon (:) with a newline (\n) to split the list into individual directories.
+Counts the number of lines (directories) using wc -l.
+Prints the total count.
+Usage
+Make the script executable:
+
+bash
+chmod +x 3-paths
+Run the script:
+
+bash
+. ./3-paths
+The script will output a number, which is how many directories are in your $PATH.
+Example
+If your $PATH is:
+
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+Running the script will output:
+
+4
