@@ -7,7 +7,7 @@ To activate the alias, run:
 source ./0-alias
 
 
-# 1-hello_you Script
+## 1-hello_you Script
 This script prints a greeting message that includes the current Linux username.
 
 Usage
@@ -29,7 +29,7 @@ where <your-username> is the username of the current user.
 source ./0-alias
 
 
-# Script: 2-path
+## Script: 2-path
 Description
 This script adds /action to the end of the current PATH environment variable.
 After running this script with source, the shell will look into /action last when searching for commands.
