@@ -1,5 +1,2 @@
 #!/bin/bash
-
-echo "All variables and functions:"
 set
-
