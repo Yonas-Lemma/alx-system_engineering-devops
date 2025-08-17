@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Create a global variable named BEST with the value "School"
+BEST="School"
+
+# Export the variable to make it available to child processes
+export BEST
