@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Convert binary to decimal
+decimal_value=$((2#$BINARY))
+
+# Display the decimal value
+echo "$decimal_value"
+
