@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$(( 5#$(echo "$WATER" | tr 'water' '01234' ) + 4#$(echo "$STIR" | tr -d '.' | tr 'stir.' '012345') ))" | tr '01234567' 'bestchol'
+awk -v w="$WATER" -v s="$STIR" 'function d(s,b){return length(s)?d(substr(s,2),b)+(index(b,substr(s,1,1))-1)*length(b)^(length(s)-1):0} function t(n,b){return n<length(b)?substr(b,n+1,1):t(int(n/length(b)),b) substr(b,n%length(b)+1,1)} BEGIN{print t(d(w,"water")+d(s,"stir."),"bestchol")}'
